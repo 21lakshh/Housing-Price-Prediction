@@ -1,6 +1,5 @@
 # **Housing Price Prediction Model**
-This repository contains a machine learning model for predicting housing prices based on a variety of features. The model leverages historical  
-data to capture trends and patterns, helping estimate property values accurately.  
+This repository contains a machine learning model for predicting housing prices based on a variety of features. The model leverages historical data to capture trends and patterns, helping estimate property values accurately.  
 
 ## **Features**  
 The dataset includes property attributes such as:  

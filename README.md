@@ -99,23 +99,51 @@ Before building the pipeline, extensive EDA is conducted to understand the datas
 - **Pandas, NumPy** (for data processing)
 - **Scikit-Learn** (for ML models)
 - **Matplotlib, Seaborn** (for data visualization)
-- **TensorFlow/Keras** (optional, for deep learning models)
 
 ---
 
 ## Repository Structure
 
 ```
-├── data/                   # Raw and processed data
-├── src/
-│   ├── ingestion.py        # Data ingestion script
-│   ├── preprocessing.py    # Data preprocessing and feature engineering
-│   ├── train.py            # Model training script
-│   ├── evaluate.py         # Model evaluation script
-│   ├── pipeline.py         # ZenML pipeline definition
+|── extracted_data/                   # Raw and processed data
+|   |─── AmesHousing.csv
+|── data/                   
+|   |─── archive.zip
+|── housing-price-prediction/
+  ├── analysis/
+    ├── analyze_src/
+    │   ├── basic_data_inspection.py        # Data ingestion script
+    │   ├── bivariate_analysis.py    # Data preprocessing and feature engineering
+    │   ├── missing_values_analysis.py            # Model training script
+    │   ├── multivariate_analysis.py         # Model evaluation script
+    │   ├── univariate_analysis.py         # ZenML pipeline definition
+  ├── src/
+  │   ├── data_ingest.py        
+  │   ├── data_splitter.py    
+  │   ├── feature_engineering.py            
+  │   ├── handle_missing_values.py         
+  │   ├── model_building.py
+  │   ├── model_evaluator.py         
+  │   ├── outlier_detection.py
+  ├── steps/
+  │   ├── data_ingesttion_step.py        
+  │   ├── data_splitter_step.py    
+  │   ├── feature_engineering_step.py            
+  │   ├── handle_missing_values_step.py         
+  │   ├── model_building_step.py
+  │   ├── model_evaluator_step.py         
+  │   ├── outlier_detection_step.py
+  │   ├── model_loader.py         
+  │   ├── prediction_service_loader.py
+  │   ├── predictor.py         
+  │   ├── training_pipeline.py
+  ├── pipeline/
+  │   ├── deployment_pipeline.py        
+  │   ├── training_pipeline.py    
 ├── run_pipeline.py         # Main script to run the pipeline
+├── run_deployment.py.py
+├── sample_predict.py
 ├── requirements.txt        # Dependencies
-├── README.md               # Project documentation
 ```
 
 ---

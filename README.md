@@ -79,6 +79,8 @@ zenml up --blocking
 ```
 This will launch a ZenML dashboard where you can inspect pipeline runs, logs, and metrics.
 
+![Dashboard](/image1.png)
+
 ---
 
 ## Exploratory Data Analysis (EDA)

@@ -1,5 +1,5 @@
 import click
-from pipelines.deployment_pipeline import (
+from pipeline.deployment_pipeline import (
     continuous_deployment_pipeline,
     inference_pipeline,
 )
